@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: teacher-service
+#Springdoc
+springdoc:
+  packagesToScan: com.pinnacle.hpapp.controller
+  

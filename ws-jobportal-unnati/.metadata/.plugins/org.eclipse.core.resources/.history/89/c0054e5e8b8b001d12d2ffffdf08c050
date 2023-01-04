@@ -1,0 +1,203 @@
+2022-08-12 10:20:53.571  INFO 15708 --- [main] c.pinnacle.hpapp.ApiGatewayApplication   : Starting ApiGatewayApplication using Java 17.0.3 on DESKTOP-J8320O5 with PID 15708 (C:\Users\acode\Downloads\incoming items\ws2\api-gateway\target\classes started by acode in C:\Users\acode\Downloads\incoming items\ws2\api-gateway)
+2022-08-12 10:20:53.577  INFO 15708 --- [main] c.pinnacle.hpapp.ApiGatewayApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-12 10:20:57.003  WARN 15708 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-08-12 10:20:57.382  INFO 15708 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4b611102-e3f0-3f79-b389-ecf45c69051a
+2022-08-12 10:20:58.177  INFO 15708 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-12 10:20:58.183  INFO 15708 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-12 10:20:58.187  INFO 15708 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-12 10:21:00.292  WARN 15708 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-08-12 10:21:00.294  INFO 15708 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-08-12 10:21:00.306  WARN 15708 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-08-12 10:21:00.307  INFO 15708 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-08-12 10:21:02.179  INFO 15708 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-08-12 10:21:02.180  INFO 15708 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-08-12 10:21:02.181  INFO 15708 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-08-12 10:21:02.182  INFO 15708 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-08-12 10:21:02.182  INFO 15708 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-08-12 10:21:02.182  INFO 15708 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-08-12 10:21:02.183  INFO 15708 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-08-12 10:21:02.183  INFO 15708 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-08-12 10:21:02.183  INFO 15708 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-08-12 10:21:02.183  INFO 15708 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-08-12 10:21:02.184  INFO 15708 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-08-12 10:21:02.184  INFO 15708 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2022-08-12 10:21:02.184  INFO 15708 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-08-12 10:21:02.184  INFO 15708 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-08-12 10:21:05.717  INFO 15708 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 20 endpoint(s) beneath base path '/actuator'
+2022-08-12 10:21:06.280  INFO 15708 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-08-12 10:21:06.368  WARN 15708 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-12 10:21:06.417  INFO 15708 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-08-12 10:21:06.505  INFO 15708 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-08-12 10:21:06.515  INFO 15708 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-08-12 10:21:06.545  INFO 15708 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-08-12 10:21:06.546  INFO 15708 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-08-12 10:21:06.546  INFO 15708 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-08-12 10:21:06.546  INFO 15708 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-08-12 10:21:06.547  INFO 15708 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-08-12 10:21:06.547  INFO 15708 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-08-12 10:21:06.547  INFO 15708 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-08-12 10:21:06.940  INFO 15708 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-08-12 10:21:06.945  INFO 15708 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-08-12 10:21:06.949  INFO 15708 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-12 10:21:06.955  INFO 15708 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1660279866953 with initial instances count: 3
+2022-08-12 10:21:06.958  INFO 15708 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLOUD-API-GATEWAY-SERVICE with eureka with status UP
+2022-08-12 10:21:06.959  INFO 15708 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1660279866959, current=UP, previous=STARTING]
+2022-08-12 10:21:06.962  INFO 15708 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-API-GATEWAY-SERVICE/DESKTOP-J8320O5:cloud-api-gateway-service:8090: registering service...
+2022-08-12 10:21:07.025  INFO 15708 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-API-GATEWAY-SERVICE/DESKTOP-J8320O5:cloud-api-gateway-service:8090 - registration status: 204
+2022-08-12 10:21:07.134  INFO 15708 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090
+2022-08-12 10:21:07.135  INFO 15708 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8090
+2022-08-12 10:21:07.380  INFO 15708 --- [main] c.pinnacle.hpapp.ApiGatewayApplication   : Started ApiGatewayApplication in 15.151 seconds (JVM running for 16.57)
+2022-08-12 10:21:07.565  WARN 15708 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=cloud-api-gateway-service, managementUrl=http://DESKTOP-J8320O5:8090/actuator, healthUrl=http://DESKTOP-J8320O5:8090/actuator/health, serviceUrl=http://DESKTOP-J8320O5:8090/) at spring-boot-admin ([http://localhost:8383/instances]): Connection refused: no further information: localhost/127.0.0.1:8383; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:8383. Further attempts are logged on DEBUG level
+2022-08-12 10:21:55.308  INFO 15708 --- [reactor-http-nio-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 122 ms
+2022-08-12 10:26:06.559  INFO 15708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-08-12 10:27:31.628  INFO 20984 --- [main] c.pinnacle.hpapp.ApiGatewayApplication   : Starting ApiGatewayApplication using Java 17.0.3 on DESKTOP-J8320O5 with PID 20984 (C:\Users\acode\Downloads\incoming items\ws2\api-gateway\target\classes started by acode in C:\Users\acode\Downloads\incoming items\ws2\api-gateway)
+2022-08-12 10:27:31.631  INFO 20984 --- [main] c.pinnacle.hpapp.ApiGatewayApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-12 10:27:32.817  WARN 20984 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-08-12 10:27:32.956  INFO 20984 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4fe8fdd5-d436-38bb-9d59-69a7542f3565
+2022-08-12 10:27:33.313  INFO 20984 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-12 10:27:33.318  INFO 20984 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-12 10:27:33.323  INFO 20984 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-12 10:27:33.990  WARN 20984 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-08-12 10:27:33.991  INFO 20984 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-08-12 10:27:33.997  WARN 20984 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-08-12 10:27:33.997  INFO 20984 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-08-12 10:27:34.791  INFO 20984 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-08-12 10:27:34.791  INFO 20984 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-08-12 10:27:34.792  INFO 20984 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-08-12 10:27:34.792  INFO 20984 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-08-12 10:27:34.792  INFO 20984 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-08-12 10:27:34.792  INFO 20984 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-08-12 10:27:34.792  INFO 20984 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-08-12 10:27:34.792  INFO 20984 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-08-12 10:27:34.792  INFO 20984 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-08-12 10:27:34.793  INFO 20984 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-08-12 10:27:34.793  INFO 20984 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-08-12 10:27:34.793  INFO 20984 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2022-08-12 10:27:34.793  INFO 20984 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-08-12 10:27:34.793  INFO 20984 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-08-12 10:27:36.444  INFO 20984 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 20 endpoint(s) beneath base path '/actuator'
+2022-08-12 10:27:37.011  INFO 20984 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-08-12 10:27:37.118  WARN 20984 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-12 10:27:37.174  INFO 20984 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-08-12 10:27:37.294  INFO 20984 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-08-12 10:27:37.304  INFO 20984 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-08-12 10:27:37.339  INFO 20984 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-08-12 10:27:37.339  INFO 20984 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-08-12 10:27:37.339  INFO 20984 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-08-12 10:27:37.339  INFO 20984 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-08-12 10:27:37.339  INFO 20984 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-08-12 10:27:37.339  INFO 20984 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-08-12 10:27:37.339  INFO 20984 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-08-12 10:27:37.739  INFO 20984 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-08-12 10:27:37.743  INFO 20984 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-08-12 10:27:37.748  INFO 20984 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-12 10:27:37.754  INFO 20984 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1660280257753 with initial instances count: 5
+2022-08-12 10:27:37.757  INFO 20984 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLOUD-API-GATEWAY-SERVICE with eureka with status UP
+2022-08-12 10:27:37.757  INFO 20984 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1660280257757, current=UP, previous=STARTING]
+2022-08-12 10:27:37.759  INFO 20984 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-API-GATEWAY-SERVICE/DESKTOP-J8320O5:cloud-api-gateway-service:8090: registering service...
+2022-08-12 10:27:37.825  INFO 20984 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-API-GATEWAY-SERVICE/DESKTOP-J8320O5:cloud-api-gateway-service:8090 - registration status: 204
+2022-08-12 10:27:37.916  INFO 20984 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090
+2022-08-12 10:27:37.919  INFO 20984 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8090
+2022-08-12 10:27:38.115  INFO 20984 --- [main] c.pinnacle.hpapp.ApiGatewayApplication   : Started ApiGatewayApplication in 7.047 seconds (JVM running for 7.899)
+2022-08-12 10:27:38.276  WARN 20984 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=cloud-api-gateway-service, managementUrl=http://DESKTOP-J8320O5:8090/actuator, healthUrl=http://DESKTOP-J8320O5:8090/actuator/health, serviceUrl=http://DESKTOP-J8320O5:8090/) at spring-boot-admin ([http://localhost:8383/instances]): Connection refused: no further information: localhost/127.0.0.1:8383; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:8383. Further attempts are logged on DEBUG level
+2022-08-12 10:32:45.981  INFO 3084 --- [main] c.pinnacle.hpapp.ApiGatewayApplication   : Starting ApiGatewayApplication using Java 17.0.3 on DESKTOP-J8320O5 with PID 3084 (C:\Users\acode\Downloads\incoming items\ws2\api-gateway\target\classes started by acode in C:\Users\acode\Downloads\incoming items\ws2\api-gateway)
+2022-08-12 10:32:45.984  INFO 3084 --- [main] c.pinnacle.hpapp.ApiGatewayApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-12 10:32:47.170  WARN 3084 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-08-12 10:32:47.301  INFO 3084 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4fe8fdd5-d436-38bb-9d59-69a7542f3565
+2022-08-12 10:32:47.584  INFO 3084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-12 10:32:47.586  INFO 3084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-12 10:32:47.589  INFO 3084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-12 10:32:48.161  WARN 3084 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-08-12 10:32:48.162  INFO 3084 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-08-12 10:32:48.169  WARN 3084 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-08-12 10:32:48.169  INFO 3084 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-08-12 10:32:49.056  INFO 3084 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-08-12 10:32:49.057  INFO 3084 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-08-12 10:32:49.057  INFO 3084 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-08-12 10:32:49.057  INFO 3084 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-08-12 10:32:49.057  INFO 3084 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-08-12 10:32:49.057  INFO 3084 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-08-12 10:32:49.057  INFO 3084 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-08-12 10:32:49.057  INFO 3084 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-08-12 10:32:49.057  INFO 3084 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-08-12 10:32:49.058  INFO 3084 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-08-12 10:32:49.058  INFO 3084 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-08-12 10:32:49.058  INFO 3084 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2022-08-12 10:32:49.058  INFO 3084 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-08-12 10:32:49.058  INFO 3084 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-08-12 10:32:50.920  INFO 3084 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 20 endpoint(s) beneath base path '/actuator'
+2022-08-12 10:32:51.558  INFO 3084 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-08-12 10:32:51.669  WARN 3084 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-12 10:32:51.724  INFO 3084 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-08-12 10:32:51.834  INFO 3084 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-08-12 10:32:51.847  INFO 3084 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-08-12 10:32:51.882  INFO 3084 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-08-12 10:32:51.882  INFO 3084 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-08-12 10:32:51.882  INFO 3084 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-08-12 10:32:51.882  INFO 3084 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-08-12 10:32:51.882  INFO 3084 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-08-12 10:32:51.883  INFO 3084 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-08-12 10:32:51.883  INFO 3084 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-08-12 10:32:52.326  INFO 3084 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-08-12 10:32:52.331  INFO 3084 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-08-12 10:32:52.336  INFO 3084 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-12 10:32:52.343  INFO 3084 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1660280572341 with initial instances count: 5
+2022-08-12 10:32:52.346  INFO 3084 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLOUD-API-GATEWAY-SERVICE with eureka with status UP
+2022-08-12 10:32:52.347  INFO 3084 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1660280572347, current=UP, previous=STARTING]
+2022-08-12 10:32:52.349  INFO 3084 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-API-GATEWAY-SERVICE/DESKTOP-J8320O5:cloud-api-gateway-service:8090: registering service...
+2022-08-12 10:32:52.410  INFO 3084 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-API-GATEWAY-SERVICE/DESKTOP-J8320O5:cloud-api-gateway-service:8090 - registration status: 204
+2022-08-12 10:32:52.505  INFO 3084 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090
+2022-08-12 10:32:52.506  INFO 3084 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8090
+2022-08-12 10:32:52.750  INFO 3084 --- [main] c.pinnacle.hpapp.ApiGatewayApplication   : Started ApiGatewayApplication in 7.395 seconds (JVM running for 8.167)
+2022-08-12 10:32:52.906  WARN 3084 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=cloud-api-gateway-service, managementUrl=http://DESKTOP-J8320O5:8090/actuator, healthUrl=http://DESKTOP-J8320O5:8090/actuator/health, serviceUrl=http://DESKTOP-J8320O5:8090/) at spring-boot-admin ([http://localhost:8383/instances]): Connection refused: no further information: localhost/127.0.0.1:8383; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:8383. Further attempts are logged on DEBUG level
+2022-08-12 10:35:40.885  INFO 10340 --- [main] c.pinnacle.hpapp.ApiGatewayApplication   : Starting ApiGatewayApplication using Java 17.0.3 on DESKTOP-J8320O5 with PID 10340 (C:\Users\acode\Downloads\incoming items\ws2\api-gateway\target\classes started by acode in C:\Users\acode\Downloads\incoming items\ws2\api-gateway)
+2022-08-12 10:35:40.891  INFO 10340 --- [main] c.pinnacle.hpapp.ApiGatewayApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-12 10:35:44.495  WARN 10340 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-08-12 10:35:44.824  INFO 10340 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4fe8fdd5-d436-38bb-9d59-69a7542f3565
+2022-08-12 10:35:45.523  INFO 10340 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-12 10:35:45.531  INFO 10340 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-12 10:35:45.534  INFO 10340 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-12 10:35:46.622  WARN 10340 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-08-12 10:35:46.623  INFO 10340 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-08-12 10:35:46.631  WARN 10340 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-08-12 10:35:46.631  INFO 10340 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-08-12 10:35:47.460  INFO 10340 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-08-12 10:35:47.460  INFO 10340 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-08-12 10:35:47.460  INFO 10340 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-08-12 10:35:47.461  INFO 10340 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-08-12 10:35:47.461  INFO 10340 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-08-12 10:35:47.461  INFO 10340 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-08-12 10:35:47.461  INFO 10340 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-08-12 10:35:47.461  INFO 10340 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-08-12 10:35:47.461  INFO 10340 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-08-12 10:35:47.461  INFO 10340 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-08-12 10:35:47.461  INFO 10340 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-08-12 10:35:47.461  INFO 10340 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2022-08-12 10:35:47.461  INFO 10340 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-08-12 10:35:47.461  INFO 10340 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-08-12 10:35:49.172  INFO 10340 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 20 endpoint(s) beneath base path '/actuator'
+2022-08-12 10:35:49.766  INFO 10340 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-08-12 10:35:49.889  WARN 10340 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-12 10:35:49.941  INFO 10340 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-08-12 10:35:50.037  INFO 10340 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-08-12 10:35:50.043  INFO 10340 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-08-12 10:35:50.072  INFO 10340 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-08-12 10:35:50.073  INFO 10340 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-08-12 10:35:50.073  INFO 10340 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-08-12 10:35:50.073  INFO 10340 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-08-12 10:35:50.073  INFO 10340 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-08-12 10:35:50.074  INFO 10340 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-08-12 10:35:50.074  INFO 10340 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-08-12 10:35:50.464  INFO 10340 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-08-12 10:35:50.467  INFO 10340 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-08-12 10:35:50.470  INFO 10340 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-12 10:35:50.475  INFO 10340 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1660280750473 with initial instances count: 1
+2022-08-12 10:35:50.476  INFO 10340 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLOUD-API-GATEWAY-SERVICE with eureka with status UP
+2022-08-12 10:35:50.478  INFO 10340 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1660280750478, current=UP, previous=STARTING]
+2022-08-12 10:35:50.480  INFO 10340 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-API-GATEWAY-SERVICE/DESKTOP-J8320O5:cloud-api-gateway-service:8090: registering service...
+2022-08-12 10:35:50.540  INFO 10340 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-API-GATEWAY-SERVICE/DESKTOP-J8320O5:cloud-api-gateway-service:8090 - registration status: 204
+2022-08-12 10:35:50.634  INFO 10340 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090
+2022-08-12 10:35:50.635  INFO 10340 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8090
+2022-08-12 10:35:50.870  INFO 10340 --- [main] c.pinnacle.hpapp.ApiGatewayApplication   : Started ApiGatewayApplication in 11.122 seconds (JVM running for 12.283)
+2022-08-12 10:35:51.064  WARN 10340 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=cloud-api-gateway-service, managementUrl=http://DESKTOP-J8320O5:8090/actuator, healthUrl=http://DESKTOP-J8320O5:8090/actuator/health, serviceUrl=http://DESKTOP-J8320O5:8090/) at spring-boot-admin ([http://localhost:8383/instances]): Connection refused: no further information: localhost/127.0.0.1:8383; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:8383. Further attempts are logged on DEBUG level
+2022-08-12 10:40:50.089  INFO 10340 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

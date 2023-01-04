@@ -1,0 +1,33 @@
+# BELOW IS SERVER CONFIGURATION #
+# Admin-server Port
+server.port=8383
+
+# Credentials which BY ALL ITS CLIENTS NEED TO USE TO BE CONNECTED WITH ADMIN-SERVER
+spring.security.user.name=analytiq-client-username
+spring.security.user.password=analytiq-client-password
+# SMTP Server for local notifications
+#spring.mail.host=localhost
+#spring.mail.username=smtp-server-user
+#spring.mail.password=smtp-server-password
+spring.mail.host=smtp.gmail.com
+spring.mail.username=koel.kunj@gmail.com
+spring.mail.password=dcbuplradlvwwlug
+spring.mail.protocol=smtp
+# TLS port 587
+spring.mail.port=587
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+spring.mail.properties.mail.debug=true
+spring.mail.properties.mail.smtp.connectiontimeout=5000
+spring.mail.properties.mail.smtp.timeout=5000
+spring.mail.properties.mail.smtp.writetimeout=5000
+
+
+
+# Sender email address
+spring.boot.admin.notify.mail.from=koel.kunj@gmail.com
+# Comma-delimited list of recipient email addresses
+spring.boot.admin.notify.mail.to=koel.kunj@gmail.com
+#spring.boot.admin.notify.mail.to=
+# Comma-delimited list of carbon copy recipient email addresses
+spring.boot.admin.notify.mail.cc=

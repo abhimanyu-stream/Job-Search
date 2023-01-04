@@ -1,0 +1,9 @@
+package com.pinnaclesolutionsllc.oauth2.model;
+
+public enum RoleEnum {
+	
+	ROLE_USER,
+    ROLE_MODERATOR,
+    ROLE_ADMIN
+
+}

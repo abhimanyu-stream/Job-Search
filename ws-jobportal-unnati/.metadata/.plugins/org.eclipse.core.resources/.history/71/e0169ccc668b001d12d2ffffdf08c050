@@ -1,0 +1,46 @@
+[A]
+C:\Users\acode>cd C:\Program Files\Java\jdk1.8.0_202\bin
+
+
+C:\Program Files\Java\jdk1.8.0_202\bin>.\keytool --genkey --alias signjwt --keyalg RSA --keystore D:/keystore.jks --keysize 2048 --validity 365000
+Enter keystore password:
+Re-enter new password:analytiq!@#
+What is your first and last name?
+  [Unknown]:  abhimanyu kumar
+What is the name of your organizational unit?
+  [Unknown]:  development
+What is the name of your organization?
+  [Unknown]:  analytiq
+What is the name of your City or Locality?
+  [Unknown]:  new delhi
+What is the name of your State or Province?
+  [Unknown]:  new delhi
+What is the two-letter country code for this unit?
+  [Unknown]:  IN
+Is CN=abhimanyu kumar, OU=development, O=analytiq, L=new delhi, ST=new delhi, C=IN correct?
+  [no]:  yes
+
+Enter key password for <signjwt>
+        (RETURN if same as keystore password): hitenter
+
+[Note:-The last  thing is the password of the certificate and signjwt. I keep it the same as the password for signjwt  and the keystore and  Just hit enter.]
+
+
+[B]
+convert into 
+keytool -importkeystore -srckeystore C:/keystore.jks -destkeystore C:/keystore.jks -deststoretype pkcs12
+
+
+
+
+
+C:\Program Files\Java\jdk1.8.0_202\bin>.\keytool -importkeystore -srckeystore D:/keystore.jks -destkeystore D:/keystore.p12 -deststoretype pkcs12
+Importing keystore D:/keystore.jks to D:/keystore.p12...
+Enter destination keystore password:analytiq!@#
+Re-enter new password:analytiq!@#
+Enter source keystore password:analytiq!@#
+Entry for alias signjwt successfully imported.
+Import command completed:  1 entries successfully imported, 0 entries failed or cancelled
+
+[C]
+ get certificate:-

@@ -1,0 +1,53 @@
+Microsoft Windows [Version 10.0.22000.795]
+(c) Microsoft Corporation. All rights reserved.
+
+[A]
+C:\Users\acode>cd C:\Program Files\Java\jdk1.8.0_202\bin
+
+C:\Program Files\Java\jdk1.8.0_202\bin>.\keytool --genkey --alias signjwt --keyalg RSA --keystore D:/keystore.jks --keysize 2048 --validity 365000
+Enter keystore password:
+Re-enter new password:
+What is your first and last name?
+  [Unknown]:  abhimanyu kumar
+What is the name of your organizational unit?
+  [Unknown]:  dev
+What is the name of your organization?
+  [Unknown]:  pinnacle-solutionsllc
+What is the name of your City or Locality?
+  [Unknown]:  trivendrum
+What is the name of your State or Province?
+  [Unknown]:  kerela
+What is the two-letter country code for this unit?
+  [Unknown]:  +91
+Is CN=abhimanyu kumar, OU=dev, O=pinnacle-solutionsllc, L=trivendrum, ST=kerela, C="+91" correct?
+  [no]:  yes
+
+Enter key password for <signjwt>
+        (RETURN if same as keystore password):
+
+Warning:
+The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore D:/keystore.jks -destkeystore D:/keystore.jks -deststoretype pkcs12".
+
+
+[Note:-The last  thing is the password of the certificate and signjwt. I keep it the same as the password for signjwt  and the keystore and  Just hit enter.]
+
+
+------------
+[B]
+keytool -export -keystore D:/keystore.jks -alias signjwt -file keystore.cer
+
+
+
+---
+[C]
+keytool -importkeystore -srckeystore D:/keystore.jks 
+-srcstorepass abhimanyukumar 
+-srckeypass abhimanyukumar 
+-srcalias signjwt 
+-destalias signjwtprivate 
+-destkeystore D:/keystore.p12 -deststoretype PKCS12 
+-deststorepass abhimanyukumar -destkeypass abhimanyukumar
+-----
+
+[D]
+OpenSSl is required for fetching and sharing private and public key from above keystore.p12 created inside D:/keystore.p12 [Note:- I have not done this one yet]

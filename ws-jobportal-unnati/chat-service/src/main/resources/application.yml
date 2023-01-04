@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: chat-service
+#Springdoc
+springdoc:
+  packagesToScan: com.analytiq.jobportalunnati.core.controller
+  

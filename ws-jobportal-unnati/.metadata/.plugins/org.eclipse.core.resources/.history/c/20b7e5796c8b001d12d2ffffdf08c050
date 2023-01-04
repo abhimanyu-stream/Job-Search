@@ -1,0 +1,167 @@
+[A]
+C:\Users\acode>cd C:\Program Files\Java\jdk1.8.0_202\bin
+
+
+C:\Program Files\Java\jdk1.8.0_202\bin>.\keytool --genkey --alias signjwt --keyalg RSA --keystore D:/keystore.jks --keysize 2048 --validity 365000
+Enter keystore password:
+Re-enter new password:analytiq!@#
+What is your first and last name?
+  [Unknown]:  abhimanyu kumar
+What is the name of your organizational unit?
+  [Unknown]:  development
+What is the name of your organization?
+  [Unknown]:  analytiq
+What is the name of your City or Locality?
+  [Unknown]:  new delhi
+What is the name of your State or Province?
+  [Unknown]:  new delhi
+What is the two-letter country code for this unit?
+  [Unknown]:  IN
+Is CN=abhimanyu kumar, OU=development, O=analytiq, L=new delhi, ST=new delhi, C=IN correct?
+  [no]:  yes
+
+Enter key password for <signjwt>
+        (RETURN if same as keystore password): hitenter
+
+[Note:-The last  thing is the password of the certificate and signjwt. I keep it the same as the password for signjwt  and the keystore and  Just hit enter.]
+
+
+[B]
+convert into 
+keytool -importkeystore -srckeystore C:/keystore.jks -destkeystore C:/keystore.jks -deststoretype pkcs12
+
+
+
+
+
+C:\Program Files\Java\jdk1.8.0_202\bin>.\keytool -importkeystore -srckeystore D:/keystore.jks -destkeystore D:/keystore.p12 -deststoretype pkcs12
+Importing keystore D:/keystore.jks to D:/keystore.p12...
+Enter destination keystore password:analytiq!@#
+Re-enter new password:analytiq!@#
+Enter source keystore password:analytiq!@#
+Entry for alias signjwt successfully imported.
+Import command completed:  1 entries successfully imported, 0 entries failed or cancelled
+
+
+[C]
+
+
+
+Standard commands
+asn1parse         ca                ciphers           cms
+crl               crl2pkcs7         dgst              dh
+dhparam           dsa               dsaparam          ec
+ecparam           enc               engine            errstr
+gendh             gendsa            genpkey           genrsa
+nseq              ocsp              passwd            pkcs12
+pkcs7             pkcs8             pkey              pkeyparam
+pkeyutl           prime             rand              req
+rsa               rsautl            s_client          s_server
+s_time            sess_id           smime             speed
+spkac             srp               ts                verify
+version           x509
+
+Message Digest commands (see the `dgst' command for more details)
+md4               md5               mdc2              rmd160
+sha               sha1
+
+Cipher commands (see the `enc' command for more details)
+aes-128-cbc       aes-128-ecb       aes-192-cbc       aes-192-ecb
+aes-256-cbc       aes-256-ecb       base64            bf
+bf-cbc            bf-cfb            bf-ecb            bf-ofb
+camellia-128-cbc  camellia-128-ecb  camellia-192-cbc  camellia-192-ecb
+camellia-256-cbc  camellia-256-ecb  cast              cast-cbc
+cast5-cbc         cast5-cfb         cast5-ecb         cast5-ofb
+des               des-cbc           des-cfb           des-ecb
+des-ede           des-ede-cbc       des-ede-cfb       des-ede-ofb
+des-ede3          des-ede3-cbc      des-ede3-cfb      des-ede3-ofb
+des-ofb           des3              desx              idea
+idea-cbc          idea-cfb          idea-ecb          idea-ofb
+rc2               rc2-40-cbc        rc2-64-cbc        rc2-cbc
+rc2-cfb           rc2-ecb           rc2-ofb           rc4
+rc4-40            seed              seed-cbc          seed-cfb
+seed-ecb          seed-ofb          zlib
+
+How do I extract a private key from a keystore using openssl?
+
+OpenSSL> pkcs12 -in D:\keystore.p12 -nocerts -nodes
+Enter Import Password:
+MAC verified OK
+Bag Attributes
+    friendlyName: signjwt
+    localKeyID: 54 69 6D 65 20 31 36 37 32 37 35 30 37 32 34 39 39 35
+Key Attributes: <No Attributes>
+-----BEGIN PRIVATE KEY-----
+MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDS+wiuem2roN31
+patTwpI3CbuafgXSKCkoW9+Ed8bonDQqtRPGivg7MCL2EBRbZll8e44gKGM/dIDv
+4BmX+tgyr1ERShB9ImYgO8iiDzwDmOFuks6a18R8mD4Wp78cyfxOjwQnF6uhomyD
+TpEksukGUJ4PsVNjRGBiAsVs62OulchdKEGCzGXxUtEzPxUp7kYPTsf4uP4TDlMq
+1sEgIL7aJTD9DdRcBTgc5k92tuAGaObBzsrNcLMVoTvbQyLcwqGwIggCsG++NiVN
+33OFCy+X6HVAJBzL5kwKQh+ecc//WPtHIlA7cPaOoNZRwewifKo6wGD/O7LBT78M
+DMpGmmE7AgMBAAECggEBAK+vRKpt3lc1rL66RvGHq1PTcfoTCOvYb3VhE75uMx9N
+u474nFAPNueqjOJTv2/gyZGEHXSfzQ1xCVE2Tnmk81U5cgswnoxlEZ+zyL1SbEoe
+i1IVQ5/jHoYWDFW3N8hUVhpgszeOWWhOJYgt62Ug6jRM+2Hb6rFVpeDXp+isFqSw
+KEkmSBxmhWYlEu4bTzAAyTMCGENfim90M2N13QqkS4qniKbox+fffueDEqufXNF2
+bEycr3lEez+2k+Ek0aU3H+GTmvteiqaVXqpyBXcD+iWj7iysmQznXSz6rGK0ed3v
+Yeh7dXzjiGpD2hS6MASrbrCfSUN+vKqwhSommGHkR1ECgYEA6kOBeC5Aaj68/6+Y
+hw2GORls/9bHld4RuhjEwyfsWw8M33MjUmxFXjkOWsGULB1iBeCKlHh7rvCS1723
+dh86G7NX+flO7ZloST276753PV3Ul8qmaYjLo1+TyF1i9d4OySQHNT/1tGKUCV4c
+7NUU+EJ7oz2opJAW47MBxu/568kCgYEA5o57ZNBTBsUUWPI9LQjgylhVpIMMAEO9
+0v3T3NIhlmsge+oyMOk+8JW5nSbylK7uzjblOET62W2L54i55ohrKFHWwCqwYKGE
+nR2o3LD87xS96dS0X+3ydivsKBp9U4e/qu9OeLrJzXUGrWD68kHo+y5x0AOwWrzI
+N9O45SxW3uMCgYEAkHfRACyFzP+jzoqbpa3ReKUVczEhJGsuw3VC4pdcS0ucxLBc
+uBfNL65AC/gVSJ9WNAmlbKpgnCIAbMuyuEXJsAuJ1b7Jzf0tMv2/RkLPhii3UmTG
++45BBx+KI6ZzwOyQcbqmN1CaVgP1B1HixKsjo3ZciO8dcV7qvsFF90lG9wECgYBB
++ALWlcUr6rgnuyhF+oRXYW8f419LtBZciMRWKsnxgDWLPzedRx/7NtwlWz+Ny4AJ
+ASwVLaeZDv85AKYwkFgY8VHBKnXNMGoBirsGap30yrqMbZAu4qa9qVOpJes2O2Fc
+R5zsboXPg+ylL1qedr1zIZbvLh8H13xyfOIqsMUqgQKBgQDcFPiqV/CKmj+tLeXD
+zbBFSEBZ6RWMyRZxmgv+hSE6YwlHCUzlsUUqQchTNfO/pwsVgNEgtEMmSyVr7ins
+RPuC4uhry19zC1VZ0kzqXOoUS2V5XOga8FZ4Rs3tgOCgcUG4PDAt8xNxxFZKnVg6
+7OZgH9KlHXeBrCwTNI7q0/XYGw==
+-----END PRIVATE KEY-----
+OpenSSL>
+
+
+[D]
+How do I extract certificates from a keystore using openssl?
+pkcs12 -in D:\keystore.p12 -nokeys
+
+
+
+OpenSSL> pkcs12 -in D:\keystore.p12 -nokeys
+Enter Import Password:
+MAC verified OK
+Bag Attributes
+    friendlyName: signjwt
+    localKeyID: 54 69 6D 65 20 31 36 37 32 37 35 30 37 32 34 39 39 35
+subject=/C=IN/ST=new delhi/L=new delhi/O=analytiq/OU=development/CN=abhimanyu kumar
+issuer=/C=IN/ST=new delhi/L=new delhi/O=analytiq/OU=development/CN=abhimanyu kumar
+-----BEGIN CERTIFICATE-----
+MIIDkTCCAnmgAwIBAgIEK3kr6zANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQGEwJJ
+TjESMBAGA1UECBMJbmV3IGRlbGhpMRIwEAYDVQQHEwluZXcgZGVsaGkxETAPBgNV
+BAoTCGFuYWx5dGlxMRQwEgYDVQQLEwtkZXZlbG9wbWVudDEYMBYGA1UEAxMPYWJo
+aW1hbnl1IGt1bWFyMCAXDTIzMDEwMzEyNTYzNFoYDzMwMjIwNTA2MTI1NjM0WjB4
+MQswCQYDVQQGEwJJTjESMBAGA1UECBMJbmV3IGRlbGhpMRIwEAYDVQQHEwluZXcg
+ZGVsaGkxETAPBgNVBAoTCGFuYWx5dGlxMRQwEgYDVQQLEwtkZXZlbG9wbWVudDEY
+MBYGA1UEAxMPYWJoaW1hbnl1IGt1bWFyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+MIIBCgKCAQEA0vsIrnptq6Dd9aWrU8KSNwm7mn4F0igpKFvfhHfG6Jw0KrUTxor4
+OzAi9hAUW2ZZfHuOIChjP3SA7+AZl/rYMq9REUoQfSJmIDvIog88A5jhbpLOmtfE
+fJg+Fqe/HMn8To8EJxeroaJsg06RJLLpBlCeD7FTY0RgYgLFbOtjrpXIXShBgsxl
+8VLRMz8VKe5GD07H+Lj+Ew5TKtbBICC+2iUw/Q3UXAU4HOZPdrbgBmjmwc7KzXCz
+FaE720Mi3MKhsCIIArBvvjYlTd9zhQsvl+h1QCQcy+ZMCkIfnnHP/1j7RyJQO3D2
+jqDWUcHsInyqOsBg/zuywU+/DAzKRpphOwIDAQABoyEwHzAdBgNVHQ4EFgQUrzqj
+GHDd8u3tY1rxeGL5EkxbBT4wDQYJKoZIhvcNAQELBQADggEBACFlSa45bMIzu8xc
+1bq/j2qEpyvtsTRqb4aXg/aBCLzXu6GckX88skWSoqtpjHniNTyQcmUm718d9qDw
+if+yzBl+8ojZKisr+MWrkCy+bkw/jchsHI84u6ZoMFQMGs3RTVnPgvgU+YT5XOY0
+ETJmhKtPkgZDma+ph701nGUUSrA9KSp9mp1+5Eg/cLQQK/4Scz+3dKksJz8bOPxw
+lQVE20hkNrXerRXcU5THg0AUDHkGievwWCJc6OHj7HZxyKhL1np8F6nYCpLj4j0s
+kp3J2Wwc4mdAGR5dKMw/tzWzko8xMDmrWdM9FEomBLfZyV3S2tMQVrwIcnhtbkHt
+Xpr58pk=
+-----END CERTIFICATE-----
+OpenSSL>
+
+
+[E]
+create pem
+[F]
+create cer

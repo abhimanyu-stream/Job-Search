@@ -1,0 +1,75 @@
+server:
+  port: 8090
+# API Cloud Gateway
+spring:
+  application:
+    name: cloud-api-gateway-service
+  cloud:
+    gateway:
+    discovery:
+        locator:
+          enabled: true
+    routes:
+      - id: applicant-service
+        uri: http://localhost:9595/
+        predicates:
+        - Path=/api/posts/**,/users/**
+        filters:
+            - name: CircuitBreaker
+              args:
+                name: applicant-service
+                fallbackuri: forward:/applicantServiceFallBack
+      - id: student-service
+        uri: http://localhost:9090/
+        predicates:
+        - Path=/student/**
+        filters:
+            - name: CircuitBreaker
+              args:
+                name: student-service
+                fallbackuri: forward:/studentServiceFallBack
+      - id: teacher-service
+        uri: http://localhost:9091/
+        predicates:
+        - Path=/teacher/**
+        filters:
+            - name: CircuitBreaker
+              args:
+                name: teacher-service
+                fallbackuri: forward:/teacherServiceFallBack
+      - id: department-service
+        uri: http://localhost:9092/
+        predicates:
+        - Path=/department/**
+        filters:
+            - name: CircuitBreaker
+              args:
+                name: department-service
+                fallbackuri: forward:/departmentServiceFallBack
+                
+# Hystrix
+hystrix:
+  command:
+    fallbackcmd:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 4000
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+# Eureka Client
+eureka:
+  client:
+    instance:
+      preferIpAddress: 'true'
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+# JWT
+

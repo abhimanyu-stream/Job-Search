@@ -1,0 +1,18 @@
+package com.pinnaclesolutionsllc.oauth2.service;
+
+import org.springframework.http.ResponseEntity;
+
+import com.pinnaclesolutionsllc.oauth2.dto.JwtResponse;
+import com.pinnaclesolutionsllc.oauth2.dto.LoginRequest;
+import com.pinnaclesolutionsllc.oauth2.dto.MessageResponse;
+import com.pinnaclesolutionsllc.oauth2.dto.SignUpRequest;
+
+
+
+public interface UserService {
+	
+	ResponseEntity<MessageResponse> signUp(SignUpRequest signUpDto);
+	ResponseEntity<JwtResponse>  login(LoginRequest loginRequest);
+	String generateTokenOnRefreshToken(String username);
+
+}

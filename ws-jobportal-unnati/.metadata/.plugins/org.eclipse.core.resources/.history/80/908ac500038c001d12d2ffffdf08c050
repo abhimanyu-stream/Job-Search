@@ -1,0 +1,36 @@
+package com.analytiq.jobportalunnati.core.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.gateway.route.RouteDefinitionLocator;
+import org.springframework.cloud.gateway.route.RouteLocator;
+import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@EnableHystrix
+public class CloudApiRouteLocatorConfiguration {
+	
+	@Autowired
+	private AuthenticationFilter filter;
+	
+	@Autowired
+	RouteDefinitionLocator locator;
+
+	
+	@Bean
+    public RouteLocator gatewayRoutes(RouteLocatorBuilder routeLocatorBuilder)
+    {
+        return routeLocatorBuilder.routes()
+        		// Mention here all service name along with root url only i.e. @RequestMapping(" what is written here")on the top of class name which are in micro service project
+                .route("auth-service", auth -> auth.path("/auth/**","/rolebasedaccess/**","/api/posts/**","/users/**").filters(f -> f.filter(filter)).uri("lb://auth-service"))
+                .route("student-service", student -> student.path("/student/**").filters(f -> f.filter(filter)).uri("lb://student-service"))
+                .route("teacher-service", teacher -> teacher.path("/teacher/**").filters(f -> f.filter(filter)).uri("lb://teacher-service"))
+                .build();
+        
+    }
+	
+	
+
+}

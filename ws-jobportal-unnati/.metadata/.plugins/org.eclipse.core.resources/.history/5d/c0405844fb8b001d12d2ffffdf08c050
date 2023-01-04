@@ -1,0 +1,44 @@
+package com.analytiq.jobportalunnati.core.Controlller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.analytiq.jobportalunnati.core.entity.HumanResource;
+import com.analytiq.jobportalunnati.core.repository.HRRepository;
+
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+@Tag(name = "student-service", description = "The student Service")
+
+@RestController
+@RequestMapping("/student")
+public class StudentController {
+	
+	@Autowired
+	private HRRepository hRRepository;
+	
+	
+	@Operation(summary = "Get", description = "Any  user can access /student/ for welcome message in this application") 
+	@GetMapping("/")
+	public String welcomeMessage() {
+		return "Welcome to HumanResource Service";
+	}
+	
+	
+	@Operation(summary = "Post", description = "Any  user can access /student/save to save a new HumanResource  in this application") 
+	@PostMapping("/save")
+	public String saveStudent(@RequestBody HumanResource humanResource) {
+		
+		System.out.println("...Request inside HRController saveStudent()");
+		hRRepository.save(humanResource);
+		return "student saved in database";
+		
+		
+	}
+
+}

@@ -1,0 +1,38 @@
+spring.cloud.config.enabled=false
+
+
+
+##################START ADMIN SERVER####################
+# BELOW IS CLIENT CONFIGURATION #
+
+# URL where Admin Server is running
+spring.boot.admin.client.url=http://localhost:8383
+# server.port=0 its means is random port, so there is no collision on port 8383
+# otherwise do as below
+# client instances port are below
+#server.port=0
+#server.port=8384
+#server.port=8385
+# Expose all the Actuator endpoints
+management.endpoints.web.exposure.include=*
+# Show details in Health check section
+management.endpoint.health.show-details=always
+# If you don't set this, username 'user' will be used by default
+# And a password will be auto-generated each time your app starts
+# Such password is visible in the console during app startup
+# BELOW ARE CLIENT USERNAME AND PASSWORD, SO THAT CLIENTS API ENDPOINT CAN BE ACCESSED AS SPRING SECURITY IS ENABLED HERE
+spring.security.user.name=analytiq-client-username
+spring.security.user.password=analytiq-client-password
+# Provide username and password for Spring Boot Admin Server
+# To connect to the client
+# BELOW ARE CLIENT USERNAME AND PASSWORD TOO I.E SAME
+spring.boot.admin.client.instance.metadata.user.name=analytiq123
+spring.boot.admin.client.instance.metadata.user.password=nalytiq123password
+# Credentials to authenticate with the Admin Server
+# BELOW ARE SERVER USERNAME AND PASSWORD SO THAT CLIENTS WOULD BE GET REGISTERED THERE ITSELF, I.E IS ADMIN SERVER
+# AS SPRING SECURITY IS ENABLED HERE TOO
+spring.boot.admin.client.username=pinnacle
+spring.boot.admin.client.password=solutionsllc
+
+
+##################END ADMIN SERVER####################
